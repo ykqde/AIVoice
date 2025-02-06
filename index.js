@@ -1,7 +1,7 @@
 (function () {
   let btnStatus = "UNDEFINED"; // "UNDEFINED" "CONNECTING" "OPEN" "CLOSING" "CLOSED"
   const btnControl = document.getElementById("btn_control");
-  const recorder = new RecorderManager("../../dist");
+  const recorder = new RecorderManager("./dist");
   recorder.onStart = () => {
     changeBtnStatus("OPEN");
   };
